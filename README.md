@@ -27,7 +27,7 @@ As proposições envolvem operações lógicas como conjunção (`e`), disjunç�
 1. **Inicie o jogo** executando o script Python:
 
    ```bash
-   python3 jogo_logica.py
+   python3 jogo.py
 
     Escolha o modo de jogo:
         Digite 1 para Um Jogador.
