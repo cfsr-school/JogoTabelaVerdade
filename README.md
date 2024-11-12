@@ -69,7 +69,7 @@ O jogo tem como objetivo principal auxiliar no aprendizado e na prática de lóg
 
     Pratiquem a construção de tabelas verdade.
     Aprendam a classificar proposições como tautologias, contradições ou contingências.
-    Desenvolvam habilidades de raciocínio lógico e pensamento crítico.
+    Desenvolvam habilidades de raciocínio lógico.
 
 Requisitos
 
