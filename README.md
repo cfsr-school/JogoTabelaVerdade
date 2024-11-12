@@ -16,7 +16,7 @@ Este é um jogo educativo desenvolvido em **Python** que testa e aprimora seus c
 
 O jogo permite a participação de **um ou dois jogadores**. Em cada rodada, os jogadores são apresentados a diferentes proposições lógicas e devem:
 
-1. **Completar a Tabela Verdade**: Fornecer os valores lógicos (`0` para falso e `1` para verdadeiro) para cada combinação das proposições atômicas.
+1. **Completar a Tabela Verdade**: Fornecer os valores lógicos (`0` para falso e `1` para verdadeiro) para cada combinação das proposições.
 
 2. **Classificar a Proposição**: Determinar se a proposição é uma **Tautologia**, **Contradição** ou **Contingência**.
 
