@@ -70,7 +70,8 @@ O jogo tem como objetivo principal auxiliar no aprendizado e na prática de lóg
 Requisitos
 
     Python 3.x instalado no sistema.
-    Sistema operacional com suporte a comandos de terminal (Windows, macOS, Linux).
+    Sistema operacional com suporte a comandos de terminal (Windows, macOS, Linux)
+    VsCode com suporte para Python 3.x
 
 Como Executar
 
