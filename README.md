@@ -75,11 +75,11 @@ Requisitos
 
 Como Executar
 
-    Clone o repositório ou baixe o zip pelo github.
+    Clone o repositório ou baixe o .zip pelo github.
 
     Abra o terminal e navegue até o diretório onde o arquivo está salvo.
 
     Execute o script:
 
-    python3 jogo_logica.py
+    python3 jogo.py
 
