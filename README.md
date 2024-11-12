@@ -11,11 +11,7 @@ Este é um jogo educativo desenvolvido em **Python** que testa e aprimora seus c
 - [Objetivo Educacional](#objetivo-educacional)
 - [Requisitos](#requisitos)
 - [Como Executar](#como-executar)
-- [Contribuições](#contribuições)
-- [Licença](#licença)
-- [Capturas de Tela](#capturas-de-tela)
-- [Contato](#contato)
-
+  
 ## Descrição do Jogo
 
 O jogo permite a participação de **um ou dois jogadores**. Em cada rodada, os jogadores são apresentados a diferentes proposições lógicas e devem:
