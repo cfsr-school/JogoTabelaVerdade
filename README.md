@@ -1,171 +1,88 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Jogo de Tabelas Verdade de Lógica Proposicional</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0 15%;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        .badge {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #4B8BBE;
-            color: white;
-            border-radius: 3px;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        code {
-            background-color: #ecf0f1;
-            padding: 2px 4px;
-            border-radius: 3px;
-            font-family: 'Courier New', monospace;
-        }
-        pre {
-            background-color: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        ul, ol {
-            margin-left: 20px;
-        }
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #bdc3c7;
-            margin: 40px 0;
-        }
-    </style>
-</head>
-<body>
+# Jogo de Tabelas Verdade de Lógica Proposicional
 
-<h1>Jogo de Tabelas Verdade de Lógica Proposicional</h1>
+![Linguagem: Python](https://img.shields.io/badge/Linguagem-Python-blue.svg)
 
-<a href="#" class="badge">Python</a>
+Este é um jogo educativo desenvolvido em **Python** que testa e aprimora seus conhecimentos em lógica proposicional, especificamente na construção e classificação de tabelas verdade.
 
-<p>Este é um jogo educativo desenvolvido em Python que testa e aprimora seus conhecimentos em lógica proposicional, especificamente na construção e classificação de tabelas verdade.</p>
+## Sumário
 
-<h2>Descrição do Jogo</h2>
+- [Descrição do Jogo](#descrição-do-jogo)
+- [Como Jogar](#como-jogar)
+- [Objetivo Educacional](#objetivo-educacional)
+- [Requisitos](#requisitos)
+- [Como Executar](#como-executar)
+- [Contribuições](#contribuições)
+- [Licença](#licença)
+- [Capturas de Tela](#capturas-de-tela)
+- [Contato](#contato)
 
-<p>O jogo permite a participação de um ou dois jogadores. Em cada rodada, os jogadores são apresentados a diferentes proposições lógicas e devem:</p>
+## Descrição do Jogo
 
-<ol>
-    <li><strong>Completar a Tabela Verdade</strong>: Fornecer os valores lógicos (<code>0</code> para falso e <code>1</code> para verdadeiro) para cada combinação das proposições atômicas.</li>
-    <li><strong>Classificar a Proposição</strong>: Determinar se a proposição é uma <strong>Tautologia</strong>, <strong>Contradição</strong> ou <strong>Contingência</strong>.</li>
-</ol>
+O jogo permite a participação de **um ou dois jogadores**. Em cada rodada, os jogadores são apresentados a diferentes proposições lógicas e devem:
 
-<p>As proposições envolvem operações lógicas como conjunção (<code>e</code>), disjunção (<code>ou</code>) e negação (<code>não</code>). O jogo inclui proposições como:</p>
+1. **Completar a Tabela Verdade**: Fornecer os valores lógicos (`0` para falso e `1` para verdadeiro) para cada combinação das proposições atômicas.
 
-<ul>
-    <li><code>p e q</code></li>
-    <li><code>p ou r</code></li>
-    <li><code>p ou não q</code></li>
-    <li><code>p e não x</code></li>
-</ul>
+2. **Classificar a Proposição**: Determinar se a proposição é uma **Tautologia**, **Contradição** ou **Contingência**.
 
-<h2>Como Jogar</h2>
+As proposições envolvem operações lógicas como conjunção (`e`), disjunção (`ou`) e negação (`não`).
 
-<ol>
-    <li><strong>Inicie o jogo</strong> executando o script Python:</li>
-</ol>
+## Como Jogar
 
-<pre><code>python3 jogo_logica.py</code></pre>
+1. **Inicie o jogo** executando o script Python:
 
-<ol start="2">
-    <li><strong>Escolha o modo de jogo</strong>:</li>
-</ol>
+   ```bash
+   python3 jogo_logica.py
 
-<ul>
-    <li>Digite <code>1</code> para <strong>Um Jogador</strong>.</li>
-    <li>Digite <code>2</code> para <strong>Dois Jogadores</strong>.</li>
-</ul>
+    Escolha o modo de jogo:
+        Digite 1 para Um Jogador.
+        Digite 2 para Dois Jogadores.
 
-<ol start="3">
-    <li><strong>Rodada do Jogador</strong>:</li>
-</ol>
+    Rodada do Jogador:
 
-<ul>
-    <li>O jogador é apresentado a uma proposição lógica.</li>
-    <li>Uma tabela verdade incompleta é exibida.</li>
-    <li><strong>Completar a Tabela</strong>:</li>
-    <ul>
-        <li>Para cada combinação de valores das proposições atômicas, insira o resultado da proposição composta.</li>
-        <li>Utilize <code>1</code> para <strong>Verdadeiro</strong> e <code>0</code> para <strong>Falso</strong>.</li>
-    </ul>
-    <li><strong>Classificar a Proposição</strong>:</li>
-    <ul>
-        <li>Após completar a tabela, classifique a proposição escolhendo:</li>
-        <ul>
-            <li><code>1</code> para <strong>Tautologia</strong></li>
-            <li><code>2</code> para <strong>Contradição</strong></li>
-            <li><code>3</code> para <strong>Contingência</strong></li>
-        </ul>
-    </ul>
-</ul>
+        O jogador é apresentado a uma proposição lógica.
 
-<ol start="4">
-    <li><strong>Pontuação</strong>:</li>
-</ol>
+        Uma tabela verdade incompleta é exibida.
 
-<ul>
-    <li><strong>+1 ponto</strong> por completar corretamente a tabela verdade.</li>
-    <li><strong>+1 ponto</strong> por classificar corretamente a proposição.</li>
-</ul>
+        Completar a Tabela:
+            Para cada combinação de valores das proposições, insira o resultado da proposição composta.
+            Utilize 1 para Verdadeiro e 0 para Falso.
 
-<ol start="5">
-    <li><strong>Final do Jogo</strong>:</li>
-</ol>
+        Classificar a Proposição:
 
-<ul>
-    <li>A pontuação total de cada jogador é exibida.</li>
-    <li>O jogador com mais pontos é declarado vencedor.</li>
-    <li>Em caso de empate, o jogo termina empatado.</li>
-</ul>
+            Após completar a tabela, classifique a proposição escolhendo:
+                1 para Tautologia
+                2 para Contradição
+                3 para Contingência
 
-<h2>Objetivo Educacional</h2>
+    Pontuação:
+        +1 ponto por completar corretamente a tabela verdade.
+        +1 ponto por classificar corretamente a proposição.
 
-<p>O jogo tem como objetivo principal auxiliar no aprendizado e na prática de lógica proposicional, permitindo que os jogadores:</p>
+    Final do Jogo:
+        A pontuação total de cada jogador é exibida.
+        O jogador com mais pontos é declarado vencedor.
+        Em caso de empate, o jogo termina empatado.
 
-<ul>
-    <li>Pratiquem a construção de tabelas verdade.</li>
-    <li>Aprendam a classificar proposições como tautologias, contradições ou contingências.</li>
-    <li>Desenvolvam habilidades de raciocínio lógico e pensamento crítico.</li>
-</ul>
+Objetivo Educacional
 
-<h2>Requisitos</h2>
+O jogo tem como objetivo principal auxiliar no aprendizado e na prática de lógica proposicional, permitindo que os jogadores:
 
-<ul>
-    <li>Python 3.x instalado no sistema.</li>
-    <li>Sistema operacional com suporte a comandos de terminal (Windows, macOS, Linux).</li>
-</ul>
+    Pratiquem a construção de tabelas verdade.
+    Aprendam a classificar proposições como tautologias, contradições ou contingências.
+    Desenvolvam habilidades de raciocínio lógico e pensamento crítico.
 
-<h2>Como Executar</h2>
+Requisitos
 
-<ol>
-    <li><strong>Clone o repositório</strong> ou copie o código para um arquivo chamado <code>jogo_logica.py</code>.</li>
-    <li><strong>Abra o terminal</strong> e navegue até o diretório onde o arquivo está salvo.</li>
-    <li><strong>Execute o script</strong>:</li>
-</ol>
+    Python 3.x instalado no sistema.
+    Sistema operacional com suporte a comandos de terminal (Windows, macOS, Linux).
 
-<pre><code>python3 jogo_logica.py</code></pre>
+Como Executar
 
-<h2>Contribuições</h2>
+    Clone o repositório ou baixe o zip pelo github.
 
-<p>Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, correções ou novas funcionalidades.</p>
+    Abra o terminal e navegue até o diretório onde o arquivo está salvo.
 
-<hr>
+    Execute o script:
 
-<p><strong>Divirta-se jogando e aprimorando seus conhecimentos em lógica proposicional!</strong></p>
+    python3 jogo_logica.py
 
-</body>
-</html>
